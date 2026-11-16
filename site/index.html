@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="calculator">
+        <p class="eyebrow">Calculadora y Test</p>
+        <h1>Calculadora web</h1>
+        <p class="subtitle">Operaciones verificadas con Selenium</p>
+        <section class="panel" aria-label="Operaciones de calculadora">
+            <label for="numero1">Primer numero</label>
+            <input id="numero1" type="number" step="any" placeholder="0">
+            <label for="numero2">Segundo numero</label>
+            <input id="numero2" type="number" step="any" placeholder="0">
+            <div class="actions">
+                <button id="sumar" type="button">Sumar</button>
+                <button id="restar" type="button">Restar</button>
+                <button id="multiplicar" type="button">Multiplicar</button>
+                <button id="dividir" type="button">Dividir</button>
+            </div>
+            <div id="resultado" role="status" aria-live="polite">Resultado: -</div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
